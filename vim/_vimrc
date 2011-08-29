@@ -1,0 +1,82 @@
+" Do this so this .vimrc can be used cross-platform
+:set fileformat=unix
+
+set nocompatible
+let mapleader = ","
+
+" These options interact together in some mysterious way to give four tab spacing
+set ts=4
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+" Searching
+set incsearch ignorecase smartcase hlsearch
+set textwidth=80 
+
+" Press space to clear search highlighting and any message already displayed.
+nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
+
+"" Other configs
+"colorscheme koehler
+colorscheme wombat
+set number
+set nowrap
+syntax on
+
+"wildmenu
+set wildmenu
+set wildmode=list:longest,full
+
+"" Get rid of those annoying swap files
+set nobackup
+set nowritebackup
+set noswapfile
+
+".vimrc 
+map <F1> :e $MYVIMRC<CR>
+map <F2> :source $MYVIMRC<CR>:echoe "Vimrc Reloaded!!!"<CR> 
+
+"tabs
+nnoremap <F7> :tabp<CR>
+nnoremap <F8> :tabn<CR>
+
+nnoremap <C-n> :bn<CR>
+nnoremap <C-p> :bp<CR>
+
+map <Leader>t :tabe<CR>
+
+" How to keep your sanity when editing long text sentences in Vim
+noremap j gj
+noremap k gk
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+"map <C-J> <C-W>J
+"map <C-K> <C-W>K
+"map <C-H> <C-W>H
+"map <C-L> <C-W>L
+
+"--- Plugins ---"
+" Enable filetype plugin
+filetype plugin on
+filetype indent on
+
+"NERDTree
+map <Leader>f :NERDTreeToggle .<CR>
+let NERDTreeQuitOnOpen=1
+
+
+"--- GUI specific ---"
+:set guioptions-=m  "remove menu bar
+:set guioptions-=T  "remove toolbar
+:set guioptions-=l  "remove left-hand scroll bar
+:set guioptions-=r  "remove right-hand scroll bar
+
+"--- File type specific ---"
+" HTML & XML
+autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2

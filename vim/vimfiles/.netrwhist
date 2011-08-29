@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='C:/Program Files (x86)/Vim/vimfiles/colors'
+let g:netrw_dirhist_2='C:\Users\Default.Automaton\dropbox\code\dev\js'
+let g:netrw_dirhist_3='C:/Users/Default.Automaton/dropbox/code/dev'
+let g:netrw_dirhist_4='C:/Users/Default.Automaton/dropbox/code'
