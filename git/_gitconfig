@@ -1,0 +1,5 @@
+[user]
+	name = Fred Song
+	email = xx@uvic.ca
+[core]
+	excludesfile = /Users/xx/.gitignore_global
