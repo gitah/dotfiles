@@ -1,7 +1,10 @@
-# Windows #
+# TODO:
+Create bash script for unix and .bat file for windows
+
+# Windows
 mklink /D "%HOMEPATH%\vimfiles" "%HOMEPATH%\Dropbox\dotfiles\vim\vimfiles"
 mklink "%HOMEPATH%\_vimrc" "%HOMEPATH%\Dropbox\dotfiles\vim\_vimrc"
 
-# UNIX #
+# UNIX
 ln -s ~/Dropbox/dotfiles/vimfiles ~/vimfiles
 ln -s ~/Dropbox/dotfiles/\_vimrc ~/.vimrc
