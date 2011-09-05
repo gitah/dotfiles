@@ -51,7 +51,7 @@ map <Leader>t :tabe<CR>
 noremap j gj
 noremap k gk
 
-" Smart way to move between windows
+" Smart way to move between splits
 map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
