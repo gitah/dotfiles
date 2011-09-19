@@ -18,12 +18,15 @@ set textwidth=80
 " Press space to clear search highlighting and any message already displayed.
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 
-"" Other configs
+"" Misc configs
 "colorscheme koehler
 colorscheme wombat
+syntax on
 set number
 set nowrap
-syntax on
+"set autochdir
+autocmd BufEnter * silent! lcd %:p:h
+"set paste
 
 "wildmenu
 set wildmenu
@@ -56,10 +59,6 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-"map <C-J> <C-W>J
-"map <C-K> <C-W>K
-"map <C-H> <C-W>H
-"map <C-L> <C-W>L
 
 "--- Plugins ---"
 " Enable filetype plugin
@@ -74,7 +73,7 @@ let NERDTreeQuitOnOpen=1
 "--- GUI specific ---"
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
-:set guioptions-=l  "remove left-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
 :set guioptions-=r  "remove right-hand scroll bar
 
 "--- File type specific ---"

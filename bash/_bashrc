@@ -1,1 +1,3 @@
 alias rm="rm -i"
+alias ls="ls -G"
+alias vi="vim"
