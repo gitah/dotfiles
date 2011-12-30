@@ -60,6 +60,9 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
+" tag file
+set tags=./tags;$HOME
+
 "--- Plugins ---"
 " Enable filetype plugin
 filetype plugin on
@@ -68,6 +71,9 @@ filetype indent on
 "NERDTree
 map <Leader>f :NERDTreeToggle .<CR>
 let NERDTreeQuitOnOpen=1
+
+"ConqueShell
+map <Leader>s :ConqueTermSplit bash<CR>
 
 
 "--- GUI specific ---"

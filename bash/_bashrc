@@ -1,5 +1,4 @@
 alias rm="rm -i"
-alias ls="ls -G"
-alias ll="ls -lhG"
+alias ll="ls -lh"
 alias vi="vim"
 alias jobs="jobs -l"
