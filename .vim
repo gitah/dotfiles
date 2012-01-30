@@ -1,0 +1,1 @@
+/home/fred/local/dotfiles/vim/vimfiles/

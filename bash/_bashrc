@@ -105,3 +105,4 @@ fi
 # Python default startup file for interpreter
 PYTHONSTARTUP=$HOME/.pythonstartup.py
 export PYTHONSTARTUP
+alias python='python -B'

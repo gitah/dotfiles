@@ -2,11 +2,11 @@
 :set fileformat=unix
 
 set nocompatible
-let mapleader = ","
+let mapleader=","
 
-" These options interact together in some mysterious way to give four tab spacing
-set ts=4
+" Use tabs instead of spaces 
 set smartindent
+"set ci pi
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -18,15 +18,20 @@ set textwidth=80
 " Press space to clear search highlighting and any message already displayed.
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 
+" Colorscheme
+if has('gui_running')
+    colorscheme wombat
+else
+    colorscheme koehler
+endif
+
 "" Misc configs
-"colorscheme koehler
-colorscheme wombat
 syntax on
 set number
 set nowrap
+
 "set autochdir
-autocmd BufEnter * silent! lcd %:p:h
-"set paste
+"autocmd BufEnter * silent! lcd %:p:h
 
 "wildmenu
 set wildmenu
@@ -66,8 +71,14 @@ filetype plugin on
 filetype indent on
 
 "NERDTree
-map <Leader>f :NERDTreeToggle .<CR>
+map <Leader>f :NERDTreeToggle %:p:h<CR>
 let NERDTreeQuitOnOpen=1
+
+"Taglist
+map <Leader>l :TlistToggle<CR>
+let Tlist_GainFocus_On_ToggleOpen=1
+let Tlist_Process_File_Always=1
+let Tlist_Close_On_Select=1
 
 
 "--- GUI specific ---"
