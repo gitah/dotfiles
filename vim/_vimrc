@@ -18,6 +18,9 @@ set textwidth=80
 " Press space to clear search highlighting and any message already displayed.
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 
+" tag file
+set tags=./tags;$HOME
+
 "" Misc configs
 "colorscheme koehler
 colorscheme wombat
@@ -60,8 +63,6 @@ map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
 
-" tag file
-set tags=./tags;$HOME
 
 "--- Plugins ---"
 " Enable filetype plugin
