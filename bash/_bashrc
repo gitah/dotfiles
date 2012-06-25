@@ -102,11 +102,7 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# Python default startup file for interpreter
-PYTHONSTARTUP=$HOME/.pythonstartup.py
-export PYTHONSTARTUP
-alias python='python -B'
-
 alias rm="rm -i"
 alias vi="vim"
 alias jobs="jobs -l"
+alias py="ipython"

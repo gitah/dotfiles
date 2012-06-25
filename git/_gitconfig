@@ -1,5 +1,15 @@
 [user]
 	name = Fred Song
-	email = xx@uvic.ca
+	email = fsong@demonware.net
 [core]
-	excludesfile = /Users/xx/.gitignore_global
+	excludesfile = "~/.gitignore_global"
+    editor = "/usr/bin/vim"
+
+[alias]
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+
+[color]
+    diff = auto
+    branch = auto
+    status = auto
+    interactive = auto

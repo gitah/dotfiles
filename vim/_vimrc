@@ -18,9 +18,6 @@ set textwidth=80
 " Press space to clear search highlighting and any message already displayed.
 nnoremap <silent> <Space> :silent noh<Bar>echo<CR>
 
-" tag file
-set tags=./tags;$HOME
-
 " Colorscheme
 if has('gui_running')
     colorscheme wombat
@@ -96,3 +93,4 @@ let Tlist_Close_On_Select=1
 "--- File type specific ---"
 " HTML & XML
 autocmd FileType html,xhtml,xml setlocal expandtab shiftwidth=2 tabstop=2 softtabstop=2
+autocmd BufNewFile,BufRead *.json set ft=javascript
