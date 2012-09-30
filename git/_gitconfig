@@ -1,6 +1,6 @@
 [user]
 	name = Fred Song
-	email = fsong@demonware.net
+	email = fsong@xei.ca
 [core]
 	excludesfile = "~/.gitignore_global"
     editor = "/usr/bin/vim"
