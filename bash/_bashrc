@@ -106,3 +106,9 @@ alias rm="rm -i"
 alias vi="vim"
 alias jobs="jobs -l"
 alias py="ipython"
+
+# Mac OS X specific
+if [ `uname` == "Darwin" ]
+then
+    alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+fi
