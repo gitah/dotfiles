@@ -41,7 +41,6 @@ endif
 syntax on
 set number
 set nowrap
-set clipboard=unnamed
 
 "set autochdir
 "autocmd BufEnter * silent! lcd %:p:h
