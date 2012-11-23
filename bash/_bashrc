@@ -111,4 +111,5 @@ alias py="ipython"
 if [ `uname` == "Darwin" ]
 then
     alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
+    alias sudo='sudo '
 fi
