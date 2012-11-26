@@ -6,6 +6,7 @@ ln -s $DIR/bash/_bashrc ~/.bashrc
 ln -s $DIR/bash/_profile ~/.profile
 
 # Vim
+git clone https://github.com/gmarik/vundle.git $DIR/vim/vimfiles/bundle/vundle
 ln -s $DIR/vim/_vimrc ~/.vimrc
 ln -s $DIR/vim/_vimfiles ~/.vim
 vim +BundleInstall +qall
