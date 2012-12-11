@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# This script searches .py files for the provided string arguments and outputs them all fancy-like
+script_path=`dirname $0`
+find . -name "*.py" ! -path "*templates*" ! -path "*htdocs*" | xargs grep -n --exclude="*.svn*" "$@" | awk -f $script_path/formatfind.awk | grep "$@" --color=auto
+
