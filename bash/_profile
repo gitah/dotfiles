@@ -1,18 +1,13 @@
-# MacPorts Installer addition on 2011-04-09_at_13:45:19: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
-
-export PATH=$HOME/local/node/bin:$PATH
 export NODE_PATH=$HOME/local/node:$HOME/local/node/node/lib/node_modules
-
 export DROPBOX=$HOME/Dropbox/
 export SCHOOL=$HOME/Dropbox/school
-export EDITOR=vim
-export CLICOLOR=1
 
-
-
+# MacPorts Installer addition on 2011-04-09_at_13:45:19: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+export PATH=$HOME/local/node/bin:$PATH
 # Setting PATH for Python 2.7
 # The orginal version is saved in .profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 export PATH
+
+source ~/.bashrc

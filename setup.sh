@@ -3,7 +3,10 @@ DIR=$(cd $(dirname "$0"); pwd)
 
 # Bash
 ln -s $DIR/bash/_bashrc ~/.bashrc
-ln -s $DIR/bash/_profile ~/.profile
+if [ `uname` == "Darwin" ]
+then
+    ln -s $DIR/bash/_profile ~/.profile
+fi
 
 # Vim
 git clone https://github.com/gmarik/vundle.git $DIR/vim/vimfiles/bundle/vundle

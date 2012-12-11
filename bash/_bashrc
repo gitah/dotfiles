@@ -102,14 +102,26 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+BASH_DIR=$(dirname $(readlink ~/.bashrc))
+
 alias rm="rm -i"
 alias vi="vim"
 alias jobs="jobs -l"
 alias py="ipython"
+export EDITOR=vim
+export CLICOLOR=1
 
 # Mac OS X specific
 if [ `uname` == "Darwin" ]
 then
     alias vim=/Applications/MacVim.app/Contents/MacOS/Vim
     alias sudo='sudo '
+fi
+
+
+# Git auto complete
+GIT_COMPLETION=$BASH_DIR/git-completion.bash
+if [ -f $GIT_COMPLETION ]
+then
+    . $GIT_COMPLETION
 fi
