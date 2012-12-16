@@ -23,4 +23,5 @@ SCRIPTS_DIR=$DIR/scripts
 for SCRIPT in $(ls $SCRIPTS_DIR)
 do
     cp $SCRIPTS_DIR/$SCRIPT /usr/local/bin
+    chmod 755 /usr/local/bin/$SCRIPT
 done
