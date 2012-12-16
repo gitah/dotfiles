@@ -10,6 +10,7 @@
     lol = log --graph --decorate --pretty=oneline --abbrev-commit
     co = checkout
     st = status
+    staged = diff --staged
 
 [color]
     diff = auto
