@@ -18,9 +18,24 @@ vim +BundleInstall +qall
 ln -s $DIR/git/_gitconfig ~/.gitconfig
 ln -s $DIR/git/_gitignore_global ~/.gitignore_global
 
-# move common scripts
+# setup useful scripts
+BIN_SCRIPTS_DIR=~/bin
+mkdir $BIN_SCRIPTS_DIR &> /dev/null
+
+# ack tool
+curl http://betterthangrep.com/ack-standalone > $BIN_SCRIPTS_DIR/ack
+
+# custom scripts
 SCRIPTS_DIR=$DIR/scripts
 for SCRIPT in $(ls $SCRIPTS_DIR)
 do
-    cp $SCRIPTS_DIR/$SCRIPT /usr/local/bin
+    cp $SCRIPTS_DIR/$SCRIPT BIN_SCRIPTS_DIR
 done
+
+for SCRIPT in $(ls $BIN_SCRIPTS_DIR)
+do
+    chmod 0755 $BIN_SCRIPTS_DIR/$SCRIPT
+done
+
+
+source ~/.bashrc

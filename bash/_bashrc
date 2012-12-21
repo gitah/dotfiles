@@ -125,3 +125,6 @@ if [ -f $GIT_COMPLETION ]
 then
     . $GIT_COMPLETION
 fi
+
+# add scripts dir to path
+PATH=$PATH:~/bin
