@@ -1,7 +1,7 @@
 #! /bin/bash
 DIR=$(cd $(dirname "$0"); pwd)
 
- Bash
+# Bash
 ln -s $DIR/bash/_bashrc ~/.bashrc
 if [ `uname` == "Darwin" ]
 then
@@ -18,7 +18,7 @@ vim +BundleInstall +qall
 ln -s $DIR/git/_gitconfig ~/.gitconfig
 ln -s $DIR/git/_gitignore_global ~/.gitignore_global
 
- setup useful scripts
+# setup useful scripts
 BIN_SCRIPTS_DIR=~/bin
 echo $BIN_SCRIPTS_DIR
 mkdir ${BIN_SCRIPTS_DIR} &> /dev/null
