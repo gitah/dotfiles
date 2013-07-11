@@ -127,4 +127,6 @@ then
 fi
 
 # add scripts dir to path
-PATH=$PATH:~/bin
+export PATH=$PATH:~/bin
+
+export PYTHONPATH="/opt/local/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages"
