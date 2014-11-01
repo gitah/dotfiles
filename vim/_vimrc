@@ -1,20 +1,25 @@
 " Do this so this .vimrc can be used cross-platform
 :set fileformat=unix
+set shell=/bin/bash
 
 set nocompatible
 let mapleader=","
 
-" Install Plugins
+" Install Vundle Plugins
 filetype off                   " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'gmarik/vundle'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'ervandew/supertab'
-Bundle 'thisivan/vim-bufexplorer'
-Bundle 'kien/ctrlp.vim'
+Plugin 'gmarik/vundle'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'ervandew/supertab'
+Plugin 'thisivan/vim-bufexplorer'
+Plugin 'kien/ctrlp.vim'
+
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 " Use tabs instead of spaces 
 set smartindent
@@ -79,10 +84,6 @@ map <C-l> <C-W>l
 
 
 "--- Plugins ---"
-" Enable filetype plugin
-filetype plugin on
-filetype indent on
-
 "NERDTree
 map <Leader>f :NERDTreeToggle %:p:h<CR>
 let NERDTreeQuitOnOpen=1

@@ -12,7 +12,7 @@ fi
 git clone https://github.com/gmarik/vundle.git "$DIR/vim/vimfiles/bundle/vundle"
 ln -s "$DIR/vim/_vimrc" ~/.vimrc
 ln -s "$DIR/vim/vimfiles" ~/.vim
-vim +BundleInstall +qall
+vim +PluginInstall +qall
 
 ## Git
 ln -s "$DIR/git/_gitconfig" ~/.gitconfig
