@@ -9,7 +9,7 @@ then
 fi
 
 # Vim
-git clone https://github.com/gmarik/vundle.git "$DIR/vim/vimfiles/bundle/vundle"
+git clone https://github.com/gmarik/vundle.git "$DIR/vim/vimfiles/bundle/Vundle.vim"
 ln -s "$DIR/vim/_vimrc" ~/.vimrc
 ln -s "$DIR/vim/vimfiles" ~/.vim
 vim +PluginInstall +qall
