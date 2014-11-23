@@ -18,6 +18,9 @@ vim +PluginInstall +qall
 ln -s "$DIR/git/_gitconfig" ~/.gitconfig
 ln -s "$DIR/git/_gitignore_global" ~/.gitignore_global
 
+## Tmux
+ln -s "$DIR/tmux/_tmux.conf" ~/.tmux.conf
+
 ## setup useful scripts
 BIN_SCRIPTS_DIR=~/bin
 echo $BIN_SCRIPTS_DIR
