@@ -11,7 +11,14 @@ fi
 # Vim
 git clone https://github.com/gmarik/vundle.git "$DIR/vim/vimfiles/bundle/Vundle.vim"
 ln -s "$DIR/vim/_vimrc" ~/.vimrc
-ln -s "$DIR/vim/vimfiles" ~/.vim
+if [ -d ~/.vim ]
+then
+    echo "~/.vim exists; please delete before running script"
+    exit 1
+else
+    echo "symlinking ~/.vim"
+    ln -s "$DIR/vim/vimfiles" ~/.vim
+fi
 vim +PluginInstall +qall
 
 ## Git
